@@ -34,6 +34,8 @@ public class Driver {
     }
     public static void Quit(){
         getdriver().quit();
+        driver.remove();
+
     }
 
 }

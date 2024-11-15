@@ -55,6 +55,9 @@ public class Utilities {
         return new SimpleDateFormat("yyyy-MM-dd-h-m-ssa").format(new Date());
 
     }
+    public static boolean CheckRedirectPage(WebDriver driver,String URl){
+        return driver.getCurrentUrl().equals(URl);
+    }
 
 
 }

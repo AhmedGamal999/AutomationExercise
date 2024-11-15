@@ -86,6 +86,7 @@
             <version>${AllureApiVersion}</version>
         </dependency>
 
+
     </dependencies>
 
 </project>

@@ -17,6 +17,7 @@ public class IInvoked implements IInvokedMethodListener {
             System.out.println("Test case" + testResult.getName() + " Failure");
             try {
                 Utilities.TakeScreenShot(getdriver(), testResult.getName());
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
