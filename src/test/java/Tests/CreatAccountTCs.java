@@ -6,6 +6,7 @@ import Utilities.DataUtilies;
 import Utilities.LogUtilites;
 import Utilities.Utilities;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -31,8 +32,8 @@ public class CreatAccountTCs {
     public void CheckName() throws FileNotFoundException {
      String name=  new P01_HomePage(getdriver())
                 .ClickSignUp()
-                .SendName(DataUtilies.GetDataJson("SignUpData","name"))
-                .SendEmail(DataUtilies.GetDataJson("SignUpData","email"))
+                .SendNameSignUp(DataUtilies.GetDataJson("SignUpData","name"))
+                .SendEmailSignUp(DataUtilies.GetDataJson("SignUpData","email"))
                 .ClickSignup().GetName();
         Assert.assertEquals(DataUtilies.GetDataJson("SignUpData","name")
                 ,name);
@@ -40,18 +41,18 @@ public class CreatAccountTCs {
     public void CheckEmail() throws FileNotFoundException {
         String email=  new P01_HomePage(getdriver())
                 .ClickSignUp()
-                .SendName(DataUtilies.GetDataJson("SignUpData","name"))
-                .SendEmail(DataUtilies.GetDataJson("SignUpData","email"))
+                .SendNameSignUp(DataUtilies.GetDataJson("SignUpData","name"))
+                .SendEmailSignUp(DataUtilies.GetDataJson("SignUpData","email"))
                 .ClickSignup().GetEmail();
         Assert.assertEquals(DataUtilies.GetDataJson("SignUpData","email")
                 ,email);
     }
-    @Test
+    @Test(description = "First TC",groups = {"Task"})
     public void FillSignUpData() throws IOException {
       String name=  new P01_HomePage(getdriver())
                 .ClickSignUp()
-                .SendName(DataUtilies.GetDataJson("SignUpData","name"))
-                .SendEmail(DataUtilies.GetDataJson("SignUpData","email"))
+                .SendNameSignUp(DataUtilies.GetDataJson("SignUpData","name"))
+                .SendEmailSignUp(DataUtilies.GetDataJson("SignUpData","email"))
                 .ClickSignup()
                 .SelectTitle()
                 .SendPassword(DataUtilies.GetDataJson("SignUpData","Password"))
@@ -83,11 +84,11 @@ public class CreatAccountTCs {
 
     }
 
-/*
+
 
     @AfterMethod
     public void Quit(){
         Driver.Quit();
     }
-*/
+
 }

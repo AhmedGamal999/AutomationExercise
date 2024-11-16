@@ -28,5 +28,8 @@ public class P01_HomePage {
         Utilities.ClickElement(driver,DeleteAccount);
         return new  P05_AcountDeletedPage(driver) ;
     }
+    public boolean CheckUserLogin(String name){
+        return GetLogginUser().equals(name);
+    }
 
 }

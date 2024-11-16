@@ -31,8 +31,8 @@ public class SignUp_LoginTCS {
     public void Signup() throws IOException {
         new P01_HomePage(getdriver())
                 .ClickSignUp()
-                .SendName(DataUtilies.GetDataJson("SignUpData","name"))
-                .SendEmail(DataUtilies.GetDataJson("SignUpData","email"))
+                .SendNameSignUp(DataUtilies.GetDataJson("SignUpData","name"))
+                .SendEmailSignUp(DataUtilies.GetDataJson("SignUpData","email"))
                 .ClickSignup();
         Assert.assertTrue(Utilities.CheckRedirectPage(getdriver(),
                 DataUtilies.GetDataFromEnvironment("environment",

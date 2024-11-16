@@ -1,0 +1,4 @@
+[INFO] 16-11-2024 18:17:47 [main] [Tests.LoginTCs.setup(LoginTCs.java:27)] - Chrom is Running
+[INFO] 16-11-2024 18:17:47 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase InvalidLoginStarted
+[INFO] 16-11-2024 18:17:55 [main] [Tests.LoginTCs.InvalidLogin(LoginTCs.java:49)] - Your email or password is incorrect!
+[INFO] 16-11-2024 18:17:55 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseInvalidLoginPassed

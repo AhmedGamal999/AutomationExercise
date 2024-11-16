@@ -1,0 +1,4 @@
+[INFO] 16-11-2024 18:02:37 [main] [Tests.LoginTCs.setup(LoginTCs.java:25)] - Chrom is Running
+[INFO] 16-11-2024 18:02:37 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase ValidLoginStarted
+[INFO] 16-11-2024 18:02:42 [main] [Tests.LoginTCs.ValidLogin(LoginTCs.java:36)] - Ahmed
+[INFO] 16-11-2024 18:02:42 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseValidLoginPassed
