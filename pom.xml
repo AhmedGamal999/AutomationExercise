@@ -23,6 +23,9 @@
         <AllureApiVersion>2.32.0</AllureApiVersion>
 
     </properties>
+    <build>
+        <directory>test-outputs/target</directory>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

@@ -1,2 +1,2 @@
-[INFO] 15-11-2024 23:21:55 [main] [Tests.SignUpTCS.setup(SignUpTCS.java:27)] - Chrom is Running
+[INFO] 15-11-2024 23:21:55 [main] [Tests.SignUp_LoginTCS.setup(SignUpTCS.java:27)] - Chrom is Running
 [INFO] 15-11-2024 23:21:56 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase SignupStarted

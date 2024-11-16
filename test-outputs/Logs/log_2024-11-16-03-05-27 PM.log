@@ -1,0 +1,4 @@
+[INFO] 16-11-2024 15:05:27 [main] [Tests.CreatAccountTCs.setup(InformationTCs.java:27)] - chrom is Running
+[INFO] 16-11-2024 15:05:30 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase FillSignUpDataStarted
+[INFO] 16-11-2024 15:05:40 [main] [Tests.CreatAccountTCs.FillSignUpData(InformationTCs.java:74)] - Ahmed
+[INFO] 16-11-2024 15:05:43 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseFillSignUpDataPassed

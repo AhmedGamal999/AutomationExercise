@@ -1,4 +1,18 @@
 {
   "email": "yevete8486@gianes.com",
-  "name": "Ahmed"
+  "name": "Ahmed",
+  "Password": "123456789",
+  "Day":"31",
+  "Month": "10",
+  "Year": "1999",
+  "FirstName": "Ahmed",
+  "LastName": "Gamal",
+  "Company": "Amazon",
+  "Address1": "NewYork,America",
+  "Address2": "Paris,France",
+  "Country": "Canada",
+  "State": "Ontario",
+  "City": "London ",
+  "ZipCode": "41661",
+  "Mobile_number": "01002589183"
 }

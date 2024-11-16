@@ -13,13 +13,12 @@ import org.testng.annotations.Test;
 import Listeners.IInvoked;
 import Listeners.Itest;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 
 import static DriverFactory.Driver.getdriver;
 @Listeners({Itest.class, IInvoked.class})
-public class SignUpTCS {
+public class SignUp_LoginTCS {
     @BeforeMethod
     public void setup() throws IOException {
         Driver.SetupDriver("chrom");

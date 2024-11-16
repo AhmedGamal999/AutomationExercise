@@ -1,0 +1,6 @@
+[INFO] 16-11-2024 15:08:01 [main] [Tests.CreatAccountTCs.setup(InformationTCs.java:27)] - chrom is Running
+[INFO] 16-11-2024 15:08:03 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase FillSignUpDataStarted
+[INFO] 16-11-2024 15:08:20 [main] [Tests.CreatAccountTCs.FillSignUpData(InformationTCs.java:74)] - Ahmed
+[INFO] 16-11-2024 15:08:20 [main] [Tests.CreatAccountTCs.FillSignUpData(InformationTCs.java:76)] - The account was created By Username Ahmed
+[INFO] 16-11-2024 15:08:25 [main] [Tests.CreatAccountTCs.FillSignUpData(InformationTCs.java:80)] - the account is deleted
+[INFO] 16-11-2024 15:08:25 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseFillSignUpDataPassed

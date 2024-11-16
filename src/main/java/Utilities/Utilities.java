@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -27,9 +28,10 @@ public class Utilities {
                 .until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
-    public static void GetData(WebDriver driver,By locator){
+    public static String GetData(WebDriver driver,By locator){
         new WebDriverWait(driver,Duration.ofSeconds(5))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator).getText();
 
     }
     public static WebElement ByToWebelment(WebDriver driver, By loctor){
@@ -57,6 +59,10 @@ public class Utilities {
     }
     public static boolean CheckRedirectPage(WebDriver driver,String URl){
         return driver.getCurrentUrl().equals(URl);
+    }
+    public static void SelectFromDropDown(WebDriver driver,By locator,String key){
+        new Select(ByToWebelment(driver,locator)).selectByValue(key);
+
     }
 
 
