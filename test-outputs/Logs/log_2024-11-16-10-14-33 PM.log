@@ -1,0 +1,4 @@
+[INFO] 16-11-2024 22:14:33 [main] [Tests.FirstProductTcs.setup(FirstProductTcs.java:26)] - Chrom is Running
+[INFO] 16-11-2024 22:14:33 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase LogoutButtonStarted
+[INFO] 16-11-2024 22:14:46 [main] [CheckVisbility(FirstProductTcs.java:50)] - true
+[INFO] 16-11-2024 22:14:46 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseLogoutButtonPassed

@@ -28,7 +28,7 @@ public class LoginTCs {
         getdriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
-    @Test(groups = {"Task"})
+    @Test(groups = {"Task"},description = "TC2")
     public void ValidLogin() throws IOException {
         new P01_HomePage(getdriver())
                 .ClickSignUp()
@@ -39,7 +39,7 @@ public class LoginTCs {
       Assert.assertTrue(new P01_HomePage(getdriver())
               .CheckUserLogin(DataUtilies.GetDataJson("LoginData","name")));
     }
-    @Test(groups = {"Task"})
+    @Test(groups = {"Task"},description = "TC3")
     public void InvalidLogin() throws FileNotFoundException {
         new P01_HomePage(getdriver())
                 .ClickSignUp()

@@ -12,13 +12,12 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import Listeners.IInvoked;
 import Listeners.Itest;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 
 import static DriverFactory.Driver.getdriver;
 @Listeners({Itest.class, IInvoked.class})
-public class HomeTCs {
+public class ProductsPageTCs {
     @BeforeMethod
     public void setup() throws IOException {
         Driver.SetupDriver("chrom");
@@ -27,22 +26,10 @@ public class HomeTCs {
         getdriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
     @Test
-    public void CheckSignUp_LoginBotton() throws IOException {
-        new P01_HomePage(getdriver()).ClickSignUp();
+    public void CheckProductsBotton() throws IOException {
+        new P01_HomePage(getdriver()).ProductsButton();
         Assert.assertTrue(Utilities.CheckRedirectPage(getdriver(),DataUtilies.
-                GetDataFromEnvironment("environment","Signup_page")));
-
-    }
-    @Test(groups = {"Task"},description = "TC4")
-    public void LogoutButton() throws IOException {
-        new P01_HomePage(getdriver())
-                .ClickSignUp()
-                .SendEmailLogin(DataUtilies.GetDataJson("LoginData","email"))
-                .SendPasswordLogin(DataUtilies.GetDataJson("LoginData","password"))
-                .ClickLogin()
-                .Logout();
-        Assert.assertTrue(Utilities.CheckRedirectPage(getdriver(),DataUtilies.
-                GetDataFromEnvironment("environment","Signup_page")));
+                GetDataFromEnvironment("environment","Products_Page")));
 
     }
 

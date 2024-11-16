@@ -47,7 +47,7 @@ public class CreatAccountTCs {
         Assert.assertEquals(DataUtilies.GetDataJson("SignUpData","email")
                 ,email);
     }
-    @Test(description = "First TC",groups = {"Task"})
+    @Test(description = "TC1",groups = {"Task"})
     public void FillSignUpData() throws IOException {
       String name=  new P01_HomePage(getdriver())
                 .ClickSignUp()
@@ -85,8 +85,7 @@ public class CreatAccountTCs {
     }
 
 
-
-    @AfterMethod
+        @AfterMethod
     public void Quit(){
         Driver.Quit();
     }

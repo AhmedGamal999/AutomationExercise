@@ -64,6 +64,10 @@ public class Utilities {
         new Select(ByToWebelment(driver,locator)).selectByValue(key);
 
     }
+    public static boolean Visability(WebDriver driver,By locator){
+        WebElement element=driver.findElement(locator);
+        return element.isDisplayed();
+    }
 
 
 }
