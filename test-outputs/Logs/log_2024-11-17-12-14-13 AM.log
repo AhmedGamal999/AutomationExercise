@@ -1,0 +1,4 @@
+[INFO] 17-11-2024 00:14:13 [main] [Tests.ProductsPageTCs.setup(ProductsPageTCs.java:26)] - Chrom is Running
+[INFO] 17-11-2024 00:14:13 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase ProductSearchStarted
+[INFO] 17-11-2024 00:14:24 [main] [Tests.ProductsPageTCs.ProductSearch(ProductsPageTCs.java:47)] - Fancy Green Top
+[INFO] 17-11-2024 00:14:24 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseProductSearchPassed

@@ -1,0 +1,4 @@
+[INFO] 17-11-2024 12:49:40 [main] [Tests.ProductsPageTCs.setup(ProductsPageTCs.java:26)] - Chrom is Running
+[INFO] 17-11-2024 12:49:40 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase CheckVisbilityStarted
+[INFO] 17-11-2024 12:49:49 [main] [CheckProductVisbility(ProductsPageTCs.java:75)] - true
+[INFO] 17-11-2024 12:49:49 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseCheckVisbilityPassed

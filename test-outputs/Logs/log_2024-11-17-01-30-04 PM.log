@@ -1,0 +1,4 @@
+[INFO] 17-11-2024 13:30:04 [main] [Tests.ProductsPageTCs.setup(ProductsPageTCs.java:27)] - Chrom is Running
+[INFO] 17-11-2024 13:30:04 [main] [Listeners.Itest.onTestStart(Itest.java:18)] - TestCase AddproductTocartStarted
+[INFO] 17-11-2024 13:30:15 [main] [Tests.ProductsPageTCs.AddproductTocart(ProductsPageTCs.java:80)] - 2
+[INFO] 17-11-2024 13:30:15 [main] [Listeners.Itest.onTestSuccess(Itest.java:10)] - TestCaseAddproductTocartPassed

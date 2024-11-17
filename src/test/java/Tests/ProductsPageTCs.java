@@ -2,6 +2,8 @@ package Tests;
 
 import DriverFactory.Driver;
 import Pages.P01_HomePage;
+import Pages.P06_ProductsPage;
+import Pages.P07_CartPage;
 import Utilities.DataUtilies;
 import Utilities.LogUtilites;
 import Utilities.Utilities;
@@ -33,7 +35,53 @@ public class ProductsPageTCs {
 
     }
 
-    @AfterMethod
+    @Test(groups = {"Task"},description = "TC9")
+    public void ProductSearch() throws IOException {
+        new P01_HomePage(getdriver())
+                .ClickSignUp()
+                .SendEmailLogin(DataUtilies.GetDataJson("LoginData","email"))
+                .SendPasswordLogin(DataUtilies.GetDataJson("LoginData","password"))
+                .ClickLogin()
+                .ProductsButton()
+                .SearchProduct(DataUtilies.GetDataJson("ProductData","Productname"))
+                .Productname();
+        LogUtilites.info(new P06_ProductsPage(getdriver()).Productname());
+        Assert.assertTrue(new P06_ProductsPage(getdriver()).CheckProductname(DataUtilies.GetDataJson("ProductData","Productname")));
+
+
+    }
+    @Test(groups = {"Task"},description = "TC8")
+    public void CheckProductinfoVisbility() throws IOException {
+        new P01_HomePage(getdriver())
+                .ClickSignUp()
+                .SendEmailLogin(DataUtilies.GetDataJson("LoginData","email"))
+                .SendPasswordLogin(DataUtilies.GetDataJson("LoginData","password"))
+                .ClickLogin()
+                .ProductsButton()
+                .FirstProductViewClick()
+                .CheckProductInfoVisability();
+        LogUtilites.info(String.valueOf(new P06_ProductsPage(getdriver()).CheckProductInfoVisability()));
+        Assert.assertTrue(new P06_ProductsPage(getdriver()).CheckProductInfoVisability());
+
+    }
+    @Test(groups = {"Task"},description = "TC12,TC13")
+    public void AddproductTocart() throws IOException {
+        new P01_HomePage(getdriver())
+                .ClickSignUp()
+                .SendEmailLogin(DataUtilies.GetDataJson("LoginData", "email"))
+                .SendPasswordLogin(DataUtilies.GetDataJson("LoginData", "password"))
+                .ClickLogin()
+                .ProductsButton()
+                .AddTwoProduct("1","2")
+                .CartButtonClick()
+                .GetProductAtCartQuantity();
+
+
+        LogUtilites.info(new P07_CartPage(getdriver()).GetProductAtCartQuantity());
+        Assert.assertTrue(new P07_CartPage(getdriver()).ChecktheQuantity());
+    }
+
+        @AfterMethod
     public void Quit(){
         Driver.Quit();
     }
